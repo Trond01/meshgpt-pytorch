@@ -1105,7 +1105,8 @@ class MeshTransformer(Module, PyTorchModelHubMixin):
             ff_glu = True,
             attn_num_mem_kv = 4,
             add_value_residual = True,
-            learned_value_residual_mix = True
+            learned_value_residual_mix = True,
+            num_residual_streams = 4
         ),
         cross_attn_num_mem_kv = 4, # needed for preventing nan when dropping out text condition
         dropout = 0.,
